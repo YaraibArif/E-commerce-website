@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="beauty.css">
+    
+</head>
+<body>
+    <nav id="navbar" style="background-color: #333; padding: 10px;">
+        <div id="logo" style="display: inline;">
+            <h2 style="color: red; display: inline; margin-right: 20px;">HIT EXPORT.PK</h2>
+        </div>  
+        <ul style="display: inline; list-style: none; margin: 0; padding: 0;">
+            <li class="item" style="display: inline; margin-right: 20px;">
+                <a href="index.html" style="color: white; text-decoration: none;">Home</a>
+            </li>
+            <li class="item" style="display: inline; margin-right: 20px;">
+                <a href="https://www.facebook.com/profile.php?id=61556271786499&mibextid=ZbWKwL" style="color: white; text-decoration: none;">Our Facebook</a>
+            </li>
+            <li class="item" style="display: inline;">
+                <a href="https://www.instagram.com/hitexports.pk?igsh=NGluZzM5czBmNHJy" style="color: white; text-decoration: none;">Our Instagram</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="services-container">
+        <h1 class="h-primary center" style="margin-top: 35px;">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="beauty.jpeg" alt="">
+                <h2 class="h-secondary center">Beauty tools</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+                <div class="result-bar" style="display:none;">The order is complete</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; HIT EXPORT.PK All rights reserved!
+        </div>
+    </footer>
+
+    <script>
+        function addToCart(button) {
+            const resultBar = button.nextElementSibling;
+            resultBar.style.display = 'block';
+            setTimeout(() => {
+                resultBar.style.display = 'none';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
